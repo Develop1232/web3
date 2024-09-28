@@ -14,7 +14,7 @@
             position: relative;
             border-radius: 10px; /* Bordes redondeados */
             overflow: hidden; /* Ocultar lo que sobrepasa el rectángulo */
-            background-image: url('/fondo/corazon.jpg'); /* Fondo inicial */
+            background-image: url('fondo/corazon.jpg'); /* Fondo inicial */
             background-size: cover; /* Ajustar la imagen al tamaño del rectángulo */
         }
 
@@ -152,14 +152,14 @@
     <div class="rectangulo">
         <!-- Video de fondo que se mostrará al hacer clic en "Sí, te perdono" -->
         <video class="video-fondo" id="videoFondo" autoplay loop muted>
-            <source src="C:/Users/Jhoel~/Desktop/disculpas/fondo/corazon2.mp4" type="video/mp4">
+            <source src="fondo/corazon2.mp4" type="video/mp4">
             Tu navegador no soporta el formato de video.
         </video>
 
         <!-- Contenedor para el video principal -->
         <div class="video-container">
             <video id="video" autoplay loop muted>
-                <source src="C:/Users/Jhoel~/Desktop/disculpas/osito/lloroso.mp4" type="video/mp4">
+                <source src="osito/lloroso.mp4" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
         </div>
@@ -204,7 +204,7 @@
             
             // Cambiar el video principal
             const video = document.getElementById('video');
-            video.src = "C:/Users/Jhoel~/Desktop/disculpas/osito/feliz.mp4"; // Cambiar la fuente del video
+            video.src = "osito/feliz.mp4"; // Cambiar la fuente del video
             video.load(); // Cargar el nuevo video
 
             // Ocultar botones
@@ -212,7 +212,7 @@
 
             // Cambiar a osofeliz2.mp4 después de 2 segundos
             setTimeout(() => {
-                video.src = "C:/Users/Jhoel~/Desktop/disculpas/osito/osofeliz2.mp4"; // Cambiar la fuente del video a osofeliz2.mp4
+                video.src = "osito/osofeliz2.mp4"; // Cambiar la fuente del video a osofeliz2.mp4
                 video.load(); // Cargar el nuevo video
                 video.play(); // Reproducir el nuevo video
             }, 2000); // 2 segundos
@@ -220,4 +220,3 @@
     </script>
 </body>
 </html>
-
